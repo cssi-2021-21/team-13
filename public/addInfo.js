@@ -21,7 +21,7 @@ const handleNoteSubmit = () => {
   const shopHealth = document.querySelector('#health');
   console.log(shopClothing)
   // 2. Format the data and write it to our database
-  firebase.database().ref(`users/${googleUser.uid}`).push({
+  firebase.database().ref(`users/${googleUser.uid}/history`).push({
     clothing: shopClothing.value,
     entertainment: shopEntertainment.value,
     household: shopHousehold.value,
