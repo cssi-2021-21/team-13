@@ -35,6 +35,6 @@ const handleNoteSubmit = () => {
     shopEntertainment.value = "";
     shopHousehold.value = "";
     shopPersonal.value ="";
-    shopPersonal.value =""
+    shopHealth.value =""
   });
 }
