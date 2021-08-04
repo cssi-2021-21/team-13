@@ -1,13 +1,19 @@
   
   
+  html {
+      background: #ccc;
+  }
+  
   body {
     background: #ccc;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif, Arial, Helvetica, sans-serif;
+    margin: 100;
 }
+
 .mytabs {
     display: flex;
     flex-wrap: wrap;
-    max-width: 600px;
+    max-width: 900px;
     margin: 50px auto;
     padding: 25px;
 }
@@ -38,3 +44,26 @@
 .mytabs input[type="radio"]:checked + label {
     background: #fff;
 }
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color:black; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:#fff;
+  text-align: center;
+  padding: 40px 40px 40px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: gray;
+}   
