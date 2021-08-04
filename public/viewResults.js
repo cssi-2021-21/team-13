@@ -38,22 +38,45 @@ const createCard = (note, noteId) => {
     <div class="column is-one-quarter">
       <div class="card">
         <header class="card-header">
-          <p class="card-header-title">${note.title}</p>
+            <p class="card-header-title">${note.title}</p>
         </header>
-         <div class="card-content">
-          <div class="content">${note.clothing}</div>
-        </div>
-        <div class="card-content">
-          <div class="content">${note.entertainment}</div>
-        </div>
-        <div class="card-content">
-          <div class="content" style="text-align:left">${note.household}</div>
-        </div>
-         <div class="card-content">
-          <div class="content" style="text-align:left">${note.personal}</div>
-        </div>
-        <div class="card-content">
-          <div class="content" style="text-align:left">${note.health}</div>
+
+
+        <div class="mytabs card-content">
+            <input type="radio" id="tabShopping" name="mytabs" checked="checked">
+            <label for="tabShopping">Shopping</label>
+            <div class="tab">
+                <div class="card-content">
+                    <div class="content">${note.clothing}</div>
+                    </div>
+                <div class="card-content">
+                    <div class="content">${note.entertainment}</div>
+                </div>
+                <div class="card-content">
+                    <div class="content" style="text-align:left">${note.household}</div>
+                </div>
+                <div class="card-content">
+                    <div class="content" style="text-align:left">${note.personal}</div>
+                </div>
+                <div class="card-content">
+                    <div class="content" style="text-align:left">${note.health}</div>
+                </div>
+            </div>
+        
+            <input type="radio" id="tabTravle" name="mytabs">
+            <label for="tabTravle">Travle</label>
+            <div class="tab">
+                <h2>Travle</h2>
+                <p>Travle</p>
+            </div>
+        
+            <input type="radio" id="tabFood" name="mytabs">
+            <label for="tabFood">Food</label>
+            <div class="tab">
+                <h2>Food</h2>
+                <p>Food</p>
+            </div>
+        
         </div>
         <footer class="card-footer">
             <a href="#" class="card-footer-item" onclick="editNote('${noteId}')">
