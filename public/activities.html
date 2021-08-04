@@ -18,7 +18,7 @@
         <script defer src="/__/firebase/8.8.1/firebase-analytics.js"></script>
         <script defer src="/__/firebase/8.8.1/firebase-remote-config.js"></script>
         <script defer src="/__/firebase/8.8.1/firebase-performance.js"></script>
-        <script src="signIn.js"></script>
+        <script src="addInfo.js"></script>
         <!-- 
         initialize the SDK after all desired features are loaded, set useEmulator to false
         to avoid connecting the SDK to running emulators.
@@ -51,13 +51,12 @@
             <label for="tabShopping">Shopping</label>
             <div class="tab">
                         <div>
-                            <h2 style="text-align:center; font-size:20px;font-family: 'Montserrat', sans-serif;padding:20px;">How Much Do
-                                You Spend On Each Of the Following?</h2>
-                            <input style="padding:10px;" id="input1" class="input is-rounded" type="text" placeholder="Clothing">
-                            <input id="input2" class="input is-rounded" type="text" placeholder="Entertainment">
-                            <input id="input3" class="input is-rounded" type="text" placeholder="Household Maintenance and Repair">
-                            <input id="input4" class="input is-rounded" type="text" placeholder="Personal Care & Cleaning">
-                            <input id="input5" class="input is-rounded" type="text" placeholder="Health Care">
+                            <h2 style="text-align:center; font-size:20px;font-family: 'Montserrat', sans-serif;padding:20px;">How Much Do You Spend On Each Of the Following?</h2>
+                            <input id="clothing"class="input is-rounded" type="text" placeholder="Clothing">
+                            <input id="entertainment"class="input is-rounded" type="text" placeholder="Entertainment">
+                            <input id="household"class="input is-rounded" type="text" placeholder="Household Maintenance and Repair">
+                            <input id="personal"class="input is-rounded" type="text" placeholder="Personal Care & Cleaning">
+                            <input id="health"class="input is-rounded" type="text" placeholder="Health Care">
                         </div>
                            <div class="control">
      <button class="button is-link is-fullwidth has-text-weight-medium is-medium" onclick="handleNoteSubmit()">View Carbon Output</button>
