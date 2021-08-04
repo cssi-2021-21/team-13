@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Your Results Here!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	  <link rel="stylesheet" href="css/cards.css">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="viewResults.js"></script>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+      <div class="navbar-menu">
+        <a class="navbar-item" href="writeNote.html">
+          Add more data
+        </a>
+      </div>
+    </nav>
+    <section class="hero">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color:black; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color:black;
+  text-align: center;
+  padding: 14px 16px 40px;
+  text-decoration: none;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: red;
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="#shopping">Shopping</a>
+  <a href="#travel">Travel</a>
+  <a href="#food">Food</a>
+  <a href="#partners">Partners</a>
+  <a href="#contact">Contact</a>
+  <a href="viewTotal.html">Totals</a>
+</div>
+ </section>
+    <div class="container">
+      <div class="section">
+        <div class="columns">
+          <div class="column has-text-centered">
+            <h1 class="title">View Your History of Carbon Output Here</h1><br>
+          </div>
+        </div>
+        <div id="app" class="columns is-multiline">
+          <!-- Note cards will render here -->
+        </div>
+        <div id ="editNoteModal" class="modal">
+            <div class="modal-background"></div>
+            <div class="modal-card">
+                <section class="modal-card-body">
+                    Title: <input class="input is-normal" id="editTitleInput" type="text">
+                    Clothing: <input class="input is-normal" id="editClothingInput" type="text">
+                    Entertainment: <input class="input is-normal" id="editEntertainmentInput" type="text">
+                    Household: <input class="input is-normal" id="editHouseholdInput" type="datestyle=">
+                    Personal: <input class="input is-normal" id="editPersonalInput" type="datestyle=">
+                    Health: <input class="input is-normal" id="editHealthInput" type="datestyle=">
+                    <input id="editNoteId" type="hidden" >
+                    
+                </section>
+                <footer class="modal-card-foot">
+                    <button class="button is-success" onclick="saveEditedNote()">
+                        Save Changes
+                    </button>
+                    <button class="button" onclick="closeEditModal()">
+                        Cancel
+                    </button>
+                    
+                </footer>
+            </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="content has-text-centered">
+          <p>
+            <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+            The source code is licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. <br>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </body>
+
+</html>
