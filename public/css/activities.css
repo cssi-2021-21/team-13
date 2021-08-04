@@ -47,23 +47,3 @@
 
 
 
-
-
-
-.navbar {
-  overflow: hidden;
-  background-color:black; 
-}
-
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color:#fff;
-  text-align: center;
-  padding: 40px 40px 40px;
-  text-decoration: none;
-}
-
-.navbar a:hover, .subnav:hover .subnavbtn {
-  background-color: gray;
-}   
