@@ -18,19 +18,22 @@ const handleHistorySubmit = () => {
   firebase.database().ref(`users/${googleUser.uid}/history`).push({
     
     shopping: {
-    clothing: document.querySelector('#clothing').value,
-    entertainment: document.querySelector('#entertainment').value,
-    furniture: document.querySelector('#furniture').value,
-    office: document.querySelector('#office').value,
+        date: document.querySelector('#date').value,
+        clothing: document.querySelector('#clothing').value,
+        entertainment: document.querySelector('#entertainment').value,
+        furniture: document.querySelector('#furniture').value,
+        office: document.querySelector('#office').value,
     },
 
     energy: {
+        date: document.querySelector('#date').value,
         fuel: document.querySelector('#fuel').value,
         air: document.querySelector('#air').value,
         electricity: document.querySelector('#electricity').value,
     },
 
     food: {
+        date: document.querySelector('#date').value,
         meat: document.querySelector('#meat').value,
         dairy: document.querySelector('#dairy').value,
         grains: document.querySelector('#grains').value,
