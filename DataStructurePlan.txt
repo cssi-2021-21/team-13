@@ -1,7 +1,11 @@
 
 
+average month lenlength = 30.44
+average days in year = 365.2425
+
+
 ===== SHOPPING =======
-clothing
+clothing    300 a month = 1.87 tons in a year   1.87 / (300*12) = dollar 
 Furniture & appliances
 Entertainment
 Paper, office, & reading

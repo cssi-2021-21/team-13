@@ -1,6 +1,6 @@
 
 
-const clothingWeight = 1
+const clothingWeight = 1.03888
 const furnitureWeight = 1
 const entertainmentWeight = 1
 const officeWeight = 1
