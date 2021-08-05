@@ -61,6 +61,7 @@
 
 .level {
     background-color: rgb(221, 221, 221); 
+    background: rgb(213, 225, 255);
     padding: 10px;
     font-weight: bold;
 }
