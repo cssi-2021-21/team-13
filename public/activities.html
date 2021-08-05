@@ -56,21 +56,6 @@
                 do You Spend on Each of the Following?</h2>
 
             <div class="level">
-            <form action="/action_page.php">
-                <div class="level-left">
-                    <div class="level-item">
-                        <p>Date:</p>
-                    </div>
-                </div>
-                <div class="level-right">
-                    <div class="level-item">
-                        <input type="date" id="date" class="input allInputFields" name="date">
-                    </div>
-                </div>
-            </form>
-            </div>
-
-            <div class="level">
                 <div class="level-left">
                     <div class="level-item">
                         <p>Clothing:</p>
@@ -246,17 +231,86 @@
                 </div>
             </div>
 
-
-
-
-
         </div>
 
 
 
+        <input type="radio" id="tabTotal" name="mytabs">
+        <label for="tabTotal">Total</label>
+        <div class="tab">
+            <h2 style="text-align:center; font-size:20px;font-family: 'Montserrat', sans-serif;padding:20px;">Carbon Footprint Score.</h2>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Shopping:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.furniture}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Energy:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.furniture}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Food:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.furniture}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Total:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.furniture}</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <input type="date" id="date" class="input allInputFields" type="date">
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <button class="button tabButton has-text-weight-medium is-medium" onclick="handleHistorySubmit()">View Carbon Output</button>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
     </div>
-    <button class="button tabButton has-text-weight-medium is-medium" onclick="handleHistorySubmit()">View Carbon
-        Output</button>
+
 
 </body>
 
