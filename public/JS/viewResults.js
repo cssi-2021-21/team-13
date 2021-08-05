@@ -108,8 +108,8 @@ const createCard = (history, noteId) => {
 
 
 
-            <input type="radio" id="tabTravle${noteId}" name="mytabs${noteId}">
-            <label for="tabTravle${noteId}">Travle</label>
+            <input type="radio" id="tabEnergy${noteId}" name="mytabs${noteId}">
+            <label for="tabEnergy${noteId}">Energy</label>
             <div class="tab">
                 <div class="level">
                     <div class="level-left">
