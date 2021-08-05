@@ -19,3 +19,9 @@ Make it so that you can clear all input feilds by using html class, after submit
 Add A about page
 
 
+
+The ability to decide what the time range of the calculation,
+Day/Week/Month/Year
+
+
+
