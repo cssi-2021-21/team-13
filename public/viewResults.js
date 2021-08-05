@@ -99,7 +99,7 @@ const createCard = (history, noteId) => {
 
 const deleteNote = (noteId) => {
     alert("are you sure!")
-    firebase.database().ref(`users/${googleUserId}/${noteId}`).remove()
+    firebase.database().ref(`users/${googleUserId}/history/${noteId}`).remove()
 }
 
 // const editNote = (noteId) => {
