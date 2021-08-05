@@ -1,6 +1,7 @@
 
 save date in data base
 Add date as title
+= meta info
 
 
 Revamp the input,
@@ -14,5 +15,7 @@ If so need to update the total calculation
 Make it so that you can clear all input feilds by using html class, after submiting data
 
 
+
+Add A about page
 
 
