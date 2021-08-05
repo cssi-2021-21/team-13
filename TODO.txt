@@ -4,16 +4,17 @@ Add date as title
 = meta info
 
 
+==== DONE ====
 Revamp the input,
 Text and imput as seprate elemeelements.
-
+==============
 
 Maybe added the edit to history
 If so need to update the total calculation 
 
-
+==== DONE ====
 Make it so that you can clear all input feilds by using html class, after submiting data
-
+==============
 
 
 Add A about page
@@ -22,6 +23,5 @@ Add A about page
 
 The ability to decide what the time range of the calculation,
 Day/Week/Month/Year
-
 
 

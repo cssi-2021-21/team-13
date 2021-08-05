@@ -13,31 +13,36 @@ window.onload = (event) => {
 };
 
 const handleHistorySubmit = () => {
-  // 1. Capture the form data
-  const shopClothing = document.querySelector('#clothing');
-  const shopEntertainment = document.querySelector('#entertainment');
-  const shopHousehold = document.querySelector('#household');
-  const shopPersonal = document.querySelector('#personal');
-  const shopHealth = document.querySelector('#health');
 
   // 2. Format the data and write it to our database
   firebase.database().ref(`users/${googleUser.uid}/history`).push({
     
     shopping: {
-    clothing: shopClothing.value,
-    entertainment: shopEntertainment.value,
-    household: shopHousehold.value,
-    personal: shopPersonal.value,
-    health: shopPersonal.value
+    clothing: document.querySelector('#clothing').value,
+    entertainment: document.querySelector('#entertainment').value,
+    furniture: document.querySelector('#furniture').value,
+    office: document.querySelector('#office').value,
+    },
+
+    energy: {
+        fuel: document.querySelector('#fuel').value,
+        air: document.querySelector('#air').value,
+        electricity: document.querySelector('#electricity').value,
+    },
+
+    food: {
+        meat: document.querySelector('#meat').value,
+        dairy: document.querySelector('#dairy').value,
+        grains: document.querySelector('#grains').value,
+        fruits: document.querySelector('#fruits').value,
+        snacks: document.querySelector('#snacks').value,
     }
 
   })
   // 3. Clear the form so that we can write a new note
   .then(() => {
-    shopClothing.value = "";
-    shopEntertainment.value = "";
-    shopHousehold.value = "";
-    shopPersonal.value ="";
-    shopHealth.value =""
+    document.querySelectorAll('.allInputFields').forEach( (field) => {
+        field.value = ''
+    })
   });
 }

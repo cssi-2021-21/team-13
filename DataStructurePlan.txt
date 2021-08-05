@@ -1,7 +1,6 @@
 
 
 ===== SHOPPING =======
-
 clothing
 Furniture & appliances
 Entertainment
