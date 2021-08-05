@@ -1,3 +1,5 @@
+
+
 let googleUserId;
 
 window.onload = (event) => {
@@ -15,8 +17,8 @@ window.onload = (event) => {
 };
 
 const getData = (userId) => {
-  const notesRef = firebase.database().ref(`users/${userId}/history`);
-  notesRef.on('value', (snapshot) => {
+  const historyRef = firebase.database().ref(`users/${userId}/history`);
+  historyRef.on('value', (snapshot) => {
     const data = snapshot.val();
     renderDataAsHtml(data);
   });
@@ -24,54 +26,57 @@ const getData = (userId) => {
 
 const renderDataAsHtml = (data) => {
   let cards = ``;
-  for (const noteItem in data) {
-    const note = data[noteItem];
-    // For each note create an HTML card
-    cards += createCard(note, noteItem)
+  for (const historyItem in data) {
+    const note = data[historyItem];
+    // For each history create an HTML card
+    cards += createCard(note, historyItem)
   };
-  // Inject our string of HTML into our viewNotes.html page
+  // Inject our string of HTML into our viewtotviewTotal.html page
   document.querySelector('#app').innerHTML = cards;
 };
 
-const createCard = (note, noteId) => {
+
+
+
+const createCard = (history, noteId) => {
   return `
     <div class="column is-one-quarter">
       <div class="card">
         <header class="card-header">
-            <p class="card-header-title">${note.title}</p>
+            <p class="card-header-title">${history.title}</p>
         </header>
 
 
         <div class="mytabs card-content">
-            <input type="radio" id="tabShopping" name="mytabs" checked="checked">
-            <label for="tabShopping">Shopping</label>
+            <input type="radio" id="tabShopping${noteId}" name="mytabs${noteId}" checked="checked">
+            <label for="tabShopping${noteId}">Shopping</label>
             <div class="tab">
                 <div class="card-content">
-                    <div class="content">${note.clothing}</div>
+                    <div class="content">${history.clothing}</div>
                     </div>
                 <div class="card-content">
-                    <div class="content">${note.entertainment}</div>
+                    <div class="content">${history.entertainment}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${note.household}</div>
+                    <div class="content" style="text-align:left">${history.household}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${note.personal}</div>
+                    <div class="content" style="text-align:left">${history.personal}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${note.health}</div>
+                    <div class="content" style="text-align:left">${history.health}</div>
                 </div>
             </div>
         
-            <input type="radio" id="tabTravle" name="mytabs">
-            <label for="tabTravle">Travle</label>
+            <input type="radio" id="tabTravle${noteId}" name="mytabs${noteId}">
+            <label for="tabTravle${noteId}">Travle</label>
             <div class="tab">
                 <h2>Travle</h2>
                 <p>Travle</p>
             </div>
         
-            <input type="radio" id="tabFood" name="mytabs">
-            <label for="tabFood">Food</label>
+            <input type="radio" id="tabFood${noteId}" name="mytabs${noteId}">
+            <label for="tabFood${noteId}">Food</label>
             <div class="tab">
                 <h2>Food</h2>
                 <p>Food</p>
