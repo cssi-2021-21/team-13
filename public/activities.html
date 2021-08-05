@@ -19,6 +19,7 @@
     <script defer src="/__/firebase/8.8.1/firebase-remote-config.js"></script>
     <script defer src="/__/firebase/8.8.1/firebase-performance.js"></script>
     <script src="JS/addInfo.js"></script>
+    <script src="JS/calculate.js"></script>
     <!-- 
         initialize the SDK after all desired features are loaded, set useEmulator to false
         to avoid connecting the SDK to running emulators.
@@ -235,7 +236,7 @@
 
 
 
-        <input type="radio" id="tabTotal" name="mytabs">
+        <input type="radio" id="tabTotal" name="mytabs" onclick="calculateTotals()">
         <label for="tabTotal">Total</label>
         <div class="tab">
             <h2 style="text-align:center; font-size:20px;font-family: 'Montserrat', sans-serif;padding:20px;">Carbon Footprint Score.</h2>
