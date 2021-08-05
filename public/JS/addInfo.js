@@ -18,7 +18,6 @@ const handleHistorySubmit = () => {
   firebase.database().ref(`users/${googleUser.uid}/history`).push({
     
     shopping: {
-        date: document.querySelector('#date').value,
         clothing: document.querySelector('#clothing').value,
         entertainment: document.querySelector('#entertainment').value,
         furniture: document.querySelector('#furniture').value,
@@ -26,19 +25,26 @@ const handleHistorySubmit = () => {
     },
 
     energy: {
-        date: document.querySelector('#date').value,
         fuel: document.querySelector('#fuel').value,
         air: document.querySelector('#air').value,
         electricity: document.querySelector('#electricity').value,
     },
 
     food: {
-        date: document.querySelector('#date').value,
         meat: document.querySelector('#meat').value,
         dairy: document.querySelector('#dairy').value,
         grains: document.querySelector('#grains').value,
         fruits: document.querySelector('#fruits').value,
         snacks: document.querySelector('#snacks').value,
+    },
+
+    meta:
+    {
+        date: document.querySelector('#date').value,
+        shoppingTotal: document.querySelector('#shoppingTotal').innerHTML,
+        energyTotal: document.querySelector('#energyTotal').innerHTML,
+        foodTotal: document.querySelector('#foodTotal').innerHTML,
+        total: document.querySelector('#total').innerHTML,
     }
 
   })
