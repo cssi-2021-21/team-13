@@ -39,7 +39,8 @@ const renderDataAsHtml = (data) => {
 
 
 const createCard = (history, noteId) => {
-  return `
+
+    return `
     <div class="column is-one-quarter">
       <div class="card">
         <header class="card-header">
@@ -52,19 +53,19 @@ const createCard = (history, noteId) => {
             <label for="tabShopping${noteId}">Shopping</label>
             <div class="tab">
                 <div class="card-content">
-                    <div class="content">${history.clothing}</div>
+                    <div class="content">${history.shopping.clothing}</div>
                     </div>
                 <div class="card-content">
-                    <div class="content">${history.entertainment}</div>
+                    <div class="content">${history.shopping.entertainment}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${history.household}</div>
+                    <div class="content" style="text-align:left">${history.shopping.household}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${history.personal}</div>
+                    <div class="content" style="text-align:left">${history.shopping.personal}</div>
                 </div>
                 <div class="card-content">
-                    <div class="content" style="text-align:left">${history.health}</div>
+                    <div class="content" style="text-align:left">${history.shopping.health}</div>
                 </div>
             </div>
         
