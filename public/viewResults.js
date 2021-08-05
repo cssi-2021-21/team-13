@@ -15,7 +15,7 @@ window.onload = (event) => {
 };
 
 const getData = (userId) => {
-  const notesRef = firebase.database().ref(`users/${userId}`);
+  const notesRef = firebase.database().ref(`users/${userId}/history`);
   notesRef.on('value', (snapshot) => {
     const data = snapshot.val();
     renderDataAsHtml(data);

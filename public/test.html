@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>View Your Results Here!</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+	<!-- <link rel="stylesheet" href="css/cards.css"> -->
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
+    <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/activities.css">
+  </head>
+
+<body>
+
+
+    <div class="column is-one-quarter">
+      <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">${note.title}</p>
+        </header>
+
+
+        <div class="mytabs card-content">
+            <input type="radio" id="tabShopping" name="mytabs" checked="checked">
+            <label for="tabShopping">Shopping</label>
+            <div class="tab">
+                <h2>Travle</h2>
+                <p>Travle</p>
+            </div>
+        
+            <input type="radio" id="tabTravle" name="mytabs">
+            <label for="tabTravle">Travle</label>
+            <div class="tab">
+                <h2>Travle</h2>
+                <p>Travle</p>
+            </div>
+        
+            <input type="radio" id="tabFood" name="mytabs">
+            <label for="tabFood">Food</label>
+            <div class="tab">
+                <h2>Food</h2>
+                <p>Food</p>
+            </div>
+        
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="column is-one-quarter">
+      <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">${note.title}</p>
+        </header>
+
+
+        <div class="mytabs card-content">
+            <input type="radio" id="tabShoppingTest" name="mytabsTest" checked="checked">
+            <label for="tabShoppingTest">Shopping</label>
+            <div class="tab">
+                <h2>Travle</h2>
+                <p>Travle</p>
+            </div>
+        
+            <input type="radio" id="tabTravleTest" name="mytabsTest">
+            <label for="tabTravleTest">Travle</label>
+            <div class="tab">
+                <h2>Travle</h2>
+                <p>Travle</p>
+            </div>
+        
+            <input type="radio" id="tabFoodTest" name="mytabsTest">
+            <label for="tabFoodTest">Food</label>
+            <div class="tab">
+                <h2>Food</h2>
+                <p>Food</p>
+            </div>
+        
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>
