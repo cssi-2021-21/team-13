@@ -3,3 +3,14 @@ save date in data base
 Add date as title
 
 
+Revamp the input,
+Text and imput as seprate elemeelements.
+
+
+
+
+
+
+
+
+

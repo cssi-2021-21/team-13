@@ -43,7 +43,7 @@
 }
 
 .mytabs input[type="radio"]:checked + label {
-    background: #fff;
+    background: rgb(151, 179, 255);
 }
 
 
