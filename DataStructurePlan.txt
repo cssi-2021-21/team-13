@@ -5,25 +5,25 @@ average days in year = 365.2425
 
 
 ===== SHOPPING =======
-clothing    300 a month = 1.87 tons in a year   1.87 / (300*12) = dollar 
-Furniture & appliances
-Entertainment
-Paper, office, & reading
+clothing    300 a month = 1.87 tons in a year   1.87 / (300*12) = dollar 1.03888
+Furniture & appliances   1.022
+Entertainment             1.05
+Paper, office, & reading  0.65
 
 
 ===== Energy ======
-Fuel Used
-Air Travel
-Electricity 
+Fuel Used   1.05
+Air Travel  0.893
+Electricity  1.287
 
 
 
 ===== Food ======
-Meat, fish, eggs
-Dairy
-Grains & baked goods
-Fruits and vegetables
-Snacks, drinks, etc...
+Meat, fish, eggs   5.793
+Dairy                  2.411
+Grains & baked goods    1.088
+Fruits and vegetables   1.174
+Snacks, drinks, etc...  2.223
 
 
 
