@@ -22,8 +22,9 @@
 }
 .mytabs label {
     padding: 25px;
-    background: #e2e2e2;
+    background: #a0a0a0;
     font-weight: bold;
+    color: rgb(0, 0, 0);
 }
 
 .mytabs .tab {
@@ -47,3 +48,10 @@
 
 
 
+
+.tabButton {
+    display: flex;
+    max-width: 600px;
+    margin: auto;
+
+}
