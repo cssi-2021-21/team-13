@@ -71,11 +71,11 @@
 .displayNum {
 
     display: flex;
-    margin-right: 50px;
+    margin-right: 50px auto;
     padding: 10px;
     background-color: rgb(82, 82, 82);
     color: white;
-    min-width: 50px;
+    min-width: 50px auto;
 
 }
 
