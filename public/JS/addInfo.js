@@ -12,7 +12,7 @@ window.onload = (event) => {
   });
 };
 
-const handleNoteSubmit = () => {
+const handleHistorySubmit = () => {
   // 1. Capture the form data
   const shopClothing = document.querySelector('#clothing');
   const shopEntertainment = document.querySelector('#entertainment');
@@ -22,11 +22,14 @@ const handleNoteSubmit = () => {
 
   // 2. Format the data and write it to our database
   firebase.database().ref(`users/${googleUser.uid}/history`).push({
+    
+    shopping: {
     clothing: shopClothing.value,
     entertainment: shopEntertainment.value,
     household: shopHousehold.value,
     personal: shopPersonal.value,
     health: shopPersonal.value
+    }
 
   })
   // 3. Clear the form so that we can write a new note

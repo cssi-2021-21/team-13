@@ -11,6 +11,7 @@ Maybe added the edit to history
 If so need to update the total calculation 
 
 
+Make it so that you can clear all input feilds by using html class, after submiting data
 
 
 
