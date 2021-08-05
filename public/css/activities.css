@@ -64,9 +64,19 @@
     background: rgb(213, 225, 255);
     padding: 10px;
     font-weight: bold;
+    color: black;
 }
 
 
+.displayNum {
 
+    display: flex;
+    margin-right: 50px;
+    padding: 10px;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    min-width: 50px;
+
+}
 
 

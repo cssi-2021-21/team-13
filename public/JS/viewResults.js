@@ -41,7 +41,7 @@ const renderDataAsHtml = (data) => {
 const createCard = (history, noteId) => {
 
     return `
-    <div class="column is-one-quarter">
+    <div class="column is-one-third">
       <div class="card">
         <header class="card-header">
             <p class="card-header-title">${history.title}</p>
@@ -52,37 +52,186 @@ const createCard = (history, noteId) => {
             <input type="radio" id="tabShopping${noteId}" name="mytabs${noteId}" checked="checked">
             <label for="tabShopping${noteId}">Shopping</label>
             <div class="tab">
-                <div class="card-content">
-                    <div class="content">${history.shopping.clothing}</div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Clothing:</p>
                     </div>
-                <div class="card-content">
-                    <div class="content">${history.shopping.entertainment}</div>
                 </div>
-                <div class="card-content">
-                    <div class="content" style="text-align:left">${history.shopping.household}</div>
-                </div>
-                <div class="card-content">
-                    <div class="content" style="text-align:left">${history.shopping.personal}</div>
-                </div>
-                <div class="card-content">
-                    <div class="content" style="text-align:left">${history.shopping.health}</div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.clothing}</div>
+                    </div>
                 </div>
             </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Furniture & Appliances: </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.furniture}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Entertainment: </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.entertainment}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Office, Paper, & Reading: </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.shopping.office}</div>
+                    </div>
+                </div>
+            </div>
+            </div>
         
+
+
+
             <input type="radio" id="tabTravle${noteId}" name="mytabs${noteId}">
             <label for="tabTravle${noteId}">Travle</label>
             <div class="tab">
-                <h2>Travle</h2>
-                <p>Travle</p>
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Fuel Used:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.energy.fuel}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Air Travel: </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.energy.air}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Electricity: </p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.energy.electricity}</div>
+                    </div>
+                </div>
+            </div>
             </div>
         
+
+
+
+
             <input type="radio" id="tabFood${noteId}" name="mytabs${noteId}">
             <label for="tabFood${noteId}">Food</label>
             <div class="tab">
-                <h2>Food</h2>
-                <p>Food</p>
+
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Meat, Fish, Eggs:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.food.meat}</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Dairy:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.food.dairy}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Grains & Baked Goods:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.food.grains}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Fruits & Vegetables:</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.food.fruits}</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="level">
+                <div class="level-left">
+                    <div class="level-item">
+                        <p>Snacks, Drinks, Etc...</p>
+                    </div>
+                </div>
+                <div class="level-right">
+                    <div class="level-item">
+                        <div class="displayNum">${history.food.snacks}</div>                        
+                    </div>
+                </div>
+            </div>
+
+
             </div>
         
+
+
+
         </div>
         <footer class="card-footer">
             <a href="#" class="card-footer-item" onclick="editNote('${noteId}')">
