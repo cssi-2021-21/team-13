@@ -1,19 +1,19 @@
 
 
 const clothingWeight = 1.03888
-const furnitureWeight = 1
-const entertainmentWeight = 1
-const officeWeight = 1
+const furnitureWeight = 1.022
+const entertainmentWeight = 1.05
+const officeWeight = 0.65
 
-const fuelWeight = 1
-const airWeight = 1
-const electricityWeight = 1
+const fuelWeight = 1.05
+const airWeight = 0.893
+const electricityWeight = 1.287
 
-const meatWeight = 1
-const dairyWeight = 1
-const grainsWeight = 1
-const fruitsWeight = 1
-const snackWeight = 1
+const meatWeight = 5.793
+const dairyWeight = 2.411
+const grainsWeight = 1.088
+const fruitsWeight = 1.174
+const snackWeight = 2.223
 
 
 

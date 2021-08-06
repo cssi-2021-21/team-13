@@ -238,7 +238,7 @@ const createCard = (history, noteId) => {
                     </div>
                     <div class="level-right">
                         <div class="level-item">
-                            <div class="displayNum" id="shoppingTotal">0</div>
+                            <div class="displayNum" id="shoppingTotal">${history.meta.shoppingTotal}</div>
                         </div>
                     </div>
                 </div>
@@ -251,7 +251,7 @@ const createCard = (history, noteId) => {
                     </div>
                     <div class="level-right">
                         <div class="level-item">
-                            <div class="displayNum" id="energyTotal">0</div>
+                            <div class="displayNum" id="energyTotal">${history.meta.energyTotal}</div>
                         </div>
                     </div>
                 </div>
@@ -264,7 +264,7 @@ const createCard = (history, noteId) => {
                     </div>
                     <div class="level-right">
                         <div class="level-item">
-                            <div class="displayNum" id="foodTotal">0</div>
+                            <div class="displayNum" id="foodTotal">${history.meta.foodTotal}</div>
                         </div>
                     </div>
                 </div>
@@ -277,7 +277,7 @@ const createCard = (history, noteId) => {
                     </div>
                     <div class="level-right">
                         <div class="level-item">
-                            <div class="displayNum" id="total">0</div>
+                            <div class="displayNum" id="total">${history.meta.total}</div>
                         </div>
                     </div>
                 </div>
